@@ -51,10 +51,15 @@ We use a specific "virtual environment" to ensure everyone has the same Python v
 This step tells VS Code to use the `ds_course` tools we just installed.
 
 1.  Open **VS Code**.
-2.  Go to the **Extensions** icon (left sidebar squares) and install the **"Python"** extension by Microsoft.
-3.  Press **`Ctrl + Shift + P`** on your keyboard to open the Command Palette.
-4.  Type **"Python: Select Interpreter"** and click it.
-5.  Select: **`Python 3.10.x ('ds_course': conda)`**.
+2.  Go to the **Extensions** icon and install:
+   * **Python** (by Microsoft)
+   * **Jupyter** (by Microsoft)
+     
+      While the Python extension handles the logic, the Jupyter extension provides the "interface" (the cells, the play buttons, and the math formatting).
+   
+4.  Press **`Ctrl + Shift + P`** on your keyboard to open the Command Palette.
+5.  Type **"Python: Select Interpreter"** and click it.
+6.  Select: **`Python 3.10.x ('ds_course': conda)`**.
 
 ---
 
@@ -72,4 +77,4 @@ print(f"✅ Python Version: {sys.version.split()[0]}")
 print(f"✅ Pandas Version: {pd.__version__}")
 print(f"✅ Seaborn Version: {sns.__version__}")
 print("-------------------------")
-print("🚀 Your Data Science workstation is fully ready!")
+print("🎉 Success! Your Data Science workstation is fully ready!")
